@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper3"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.app.MainFragment">
+
+    <View
+        android:id="@+id/container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/mainbg"
+        android:layout_width="400dp"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="normal"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        android:text="Количество выученных вами слов:"
+        android:textColor="@color/white"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        tools:text = "63276478"
+        app:layout_constraintBottom_toBottomOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        android:layout_marginTop="50dp"
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/uppolosa"
+        android:background="@drawable/mainpolosa2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+    <View
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/onboardpolosa"
+        android:layout_width="3dp"
+        android:layout_height="55dp"/>
+
+    <ImageView
+        android:layout_marginEnd="70dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="55dp"
+        android:layout_height="55dp"/>
+
+    <TextView
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/uppolosa"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="WordWiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/btn_seting"
+        android:layout_margin="3dp"
+        android:src="@drawable/mainseting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <View
+        android:id="@+id/maincruc"
+        android:layout_marginTop="400dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/maincruc1"
+        android:layout_width="400dp"
+        android:layout_height="400dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btn_home"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/maincruc"
+        android:layout_width="200dp"
+        android:layout_height="65dp">
+
+        <View
+            android:background="@drawable/maincruc2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/mainhome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="80dp"
+            android:text="Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btn_exc"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/maincruc"
+        android:layout_width="210dp"
+        android:layout_height="60dp">
+
+        <View
+            android:background="@drawable/maincruc2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/mainganteli"
+            android:layout_marginStart="150dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Exercises"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btn_shop"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="230dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/maincruc"
+        android:layout_width="200dp"
+        android:layout_height="60dp">
+
+        <View
+            android:background="@drawable/maincruc2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/maincorzina"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="80dp"
+            android:text="Shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

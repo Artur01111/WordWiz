@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/onBoardFragment">
+
+    <fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.example.wordwiz.ui.fragment.onBoard.OnBoardFragment"
+        android:label="fragment_on_board"
+        tools:layout="@layout/fragment_on_board" >
+        <action
+            android:id="@+id/action_onBoardFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardPaggingFragment"
+        android:name="com.example.wordwiz.ui.fragment.onBoard.OnBoardPaggingFragment"
+        android:label="fragment_on_board_pagging"
+        tools:layout="@layout/fragment_on_board_pagging" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.wordwiz.ui.fragment.app.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_mainExercisesFragment"
+            app:destination="@id/mainExercisesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_mainSetingFragment"
+            app:destination="@id/mainSetingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainExercisesFragment"
+        android:name="com.example.wordwiz.ui.fragment.exersises.MainExercisesFragment"
+        android:label="fragment_main_exercises"
+        tools:layout="@layout/fragment_main_exercises" />
+    <fragment
+        android:id="@+id/mainSetingFragment"
+        android:name="com.example.wordwiz.ui.fragment.setting.MainSetingFragment"
+        android:label="fragment_main_seting"
+        tools:layout="@layout/fragment_main_seting" />
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.example.wordwiz.ui.fragment.shop.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" />
+</navigation>

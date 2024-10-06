@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="OnBoardStart.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">#80CEF1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+
+</resources>
